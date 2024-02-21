@@ -80,10 +80,12 @@ public class MetodosArray implements  Comparator<String> {
     public void eliminarporlista() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Teclea un Pais: ");
-        String paismodificado = scanner.nextLine();
-        if (lista.contains(paismodificado)) {
-            lista.remove(lista.indexOf(paismodificado));
-            System.out.println(paismodificado + " eliminada del Atlas");
+        String paiseliminado = scanner.nextLine();
+        if (lista.contains(paiseliminado)) {
+            int eliminacion = lista.indexOf(paiseliminado);
+            lista.remove(eliminacion);
+            lista.remove(eliminacion);
+            System.out.println(paiseliminado + " eliminada del Atlas");
         }
         else {
             System.out.println("Este pais no esta registrado");

@@ -53,9 +53,8 @@ public class MetodosHashMap implements Comparator<String> {
         alfabetico.putAll(midicc);
         for (String ordendicc: alfabetico.keySet() ){
            String valor = alfabetico.get(ordendicc);
-            System.out.println( ordendicc  + "( " + valor + " )");
+            System.out.println( ordendicc  + "(" + valor + ")");
         }
-        System.out.println("Hay " + map.size() + " elementos en el ATLAS");
         }
 
     public void iterarpordiccionario() {
@@ -65,7 +64,7 @@ public class MetodosHashMap implements Comparator<String> {
             String valor = map.get(clave);
             System.out.println("Pais: " + clave + " Capital: " +  valor);
         }
-
+        System.out.println("Hay " + map.size() + " elementos en el ATLAS");
     }
     public void eliminarpordiccionario() {
         Scanner scanner = new Scanner(System.in);
